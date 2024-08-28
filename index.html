@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head id="head">
-  <title>Caleb website</title>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag {
+      width: 900px;
+      height: 600px;
+      position: relative;
+      background-color: #CE1126;
+
+    }
+
+    .flag > div {
+      background-color: #002868;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 150px;
+    }
+
+    .flag > div > div {
+      background-color: white;
+      position: absolute;
+
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      top: 50px;
+      left: 350px;
+    }
+
+    p {
+      font-size: 5rem;
+      color: white;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .flag>div div p {
+      color: black;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <h1>My wonderful and amazing website</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="https://faithacademymedia.wixsite.com/website?">Faith academy</a></li>
-      <li><a href="https://www.harvard.edu/">Harvard university</a></li>
-      <li><a href="https://supremehousemontessorischool.org/">Supreme house montessori school</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Welcome to My Website</h2>
-    <p>This is an improved website</p>
-    <button onclick="addCSS()" id="button">Toggle CSS</button>
-
-  </main>
-  <footer>
-    <p>Cheating is not necessary if you study</p>
-  </footer>
-  <script>
-    let counter = 0
-    function addCSS() {
-      counter++
-      if (counter % 2 !== 0) {
-        document.getElementById("head").innerHTML = '  <title>Example HTML Website</title> \n<link rel="stylesheet" href="./styles.css" />'
-      } else {
-
-        document.getElementById("head").innerHTML = '  <title>Example HTML Website</title> '
-
-      }
-    }
-  </script>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
-
 
 
 
